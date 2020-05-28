@@ -1,5 +1,5 @@
 <?php
-require_once("EquationSolver.php");
+require_once("src/EquationSolver.php");
 		$equation = "xe2 + 5x - 20 = 8x + 20";
 		$errors = true;
 		$equation = new Solve($equation, $errors);

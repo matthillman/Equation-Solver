@@ -1,0 +1,15 @@
+{
+    "name": "mhillman/equation-solver",
+    "description": "Equation Solver",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Solver\\": "src/"
+        },
+		"files": [
+			"src/Support/helpers.php"
+		]
+    }
+}
