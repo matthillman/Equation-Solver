@@ -49,7 +49,7 @@
 	<br/><br/><input type = "Submit" style = "width: 50%; height: 50px">
 </form>
 <?php
-require_once("src/EquationSolver.php");
+require_once("src/Solve.php");
 	if (!isset($_POST["error"]))
 	{
 		$_POST["error"] = "true";
@@ -58,7 +58,7 @@ require_once("src/EquationSolver.php");
 	{
 		$equation = $_POST["equation"];
 		$errors = $_POST["error"];
-		$equation = new Solve($equation, $errors);
+		$equation = new Solver\Solve($equation, $errors);
 		$var = $equation->solution()[0];
 		$solutions = $equation->solution()[1];
 		echo "<div id = \"down\"><br/>";
