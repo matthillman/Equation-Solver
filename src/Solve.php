@@ -450,7 +450,7 @@ class Solve
 			{
 				if (strstr($this->variable, $number[$i]))
 				{
-					if (strstr("eE", $number[$i+1]))
+					if (($i + 1) < $j && strstr("eE", $number[$i+1]))
 					{
 						$a[] = substr($number, 0, -3);
 						unset($sides[$counter]);
