@@ -1,4 +1,7 @@
 <?php
+
+namespace Solver;
+
 /**
  * Equation Solver
  *
@@ -116,7 +119,7 @@ class Solve
 	}
 	/*-------------------------------------
 	 * Instantiation of the verify method
-	 * It accepts no arguments and performs a 
+	 * It accepts no arguments and performs a
 	 * series of tests on an equation to determine
 	 * it is solve-able or not (valid or not)
 	--------------------------------------*/
@@ -167,7 +170,7 @@ class Solve
 	/*-------------------------------------
 	 * Instantiation of the get_variable method
 	 * This method accepts no parameter/argument
-	 * Its sole responsibility to intelligently 
+	 * Its sole responsibility to intelligently
 	 * determine the variable to be solved
 	 * for from the supplied equation
 	--------------------------------------*/

@@ -7,9 +7,6 @@
     "autoload": {
         "psr-4": {
             "Solver\\": "src/"
-        },
-		"files": [
-			"src/Support/helpers.php"
-		]
+        }
     }
 }
