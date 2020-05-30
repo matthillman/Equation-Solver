@@ -108,13 +108,17 @@ class Solve
 	--------------------------------------*/
 	public function process_error($msg, $bool)
 	{
-		if ($bool)
-		{
-			die ($msg);
-		}
-		else
-		{
-			echo $msg;
+		if (php_sapi_name() == "cli") {
+			if ($bool)
+			{
+				die ($msg);
+			}
+			else
+			{
+				echo $msg;
+			}
+		} else {
+			throw new Exception($msg);
 		}
 	}
 	/*-------------------------------------
